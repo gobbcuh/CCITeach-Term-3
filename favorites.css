@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+}
+
+.favorites-header {
+    background-color: #FF5733;
+    color: white;
+    font-size: 2em;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 50px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.photo-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.photo-section {
+    position: relative;
+    text-align: center;
+}
+
+.photo {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #34A853;
+    color: #FFFFFF;
+    font-size: 0.8em;
+    font-weight: 700;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.2;
+}
