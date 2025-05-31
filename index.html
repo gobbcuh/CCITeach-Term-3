@@ -20,10 +20,11 @@
         </div>
         <div class="nav-buttons">
             <button onclick="scrollToSection('home-section')">Home</button>
-            <button>About</button>
-            <button>Memories</button>
-            <button>Gallery</button>
-            <button>Favorites</button>
+            <button onclick="scrollToSection('about-section')">About</button>
+            <button onclick="scrollToSection('memories-section')">Memories</button>
+            <button onclick="scrollToSection('gallery-section')">Gallery</button>
+            <button onclick="scrollToSection('favorites-section')">Favorites</button>
+            <button onclick="scrollToSection('message-section')">Message</button>
         </div>
     </div>
     <!-- Appending exact content of home.html's body -->
@@ -41,10 +42,158 @@
             </div>
         </div>
     </div>
+    <!-- Appending exact content of about.html's body with adjusted margins -->
+    <div id="about-section">
+        <div class="section-wrapper">
+            <div class="container">
+                <h1>
+                    <img src="gdg-logo.png" alt="GDG Logo" class="logo">
+                    <span>
+                        <span class="intro">what then is</span>
+                        <br>
+                        <span class="gdg">GDG</span> <span class="on">on</span> <span class="campus">Campus</span> <span class="university">National University?</span>
+                    </span>
+                </h1>
+                <div class="content-box">
+                    <p><span class="gdg-university">GDG on Campus at National University Manila</span> is one of the student-led tech communities supported by Google Developers. It’s all about peer-to-peer learning, where students can explore Google technologies, grow their skills, and work on real-world tech projects.</p>
+                    <p>They organize events like:</p>
+                    <ul>
+                        <li>Workshops and study groups</li>
+                        <li>Hackathons</li>
+                        <li>Productivity sessions</li>
+                    </ul>
+                    <p>It’s a great space for us to <span class="connect">connect</span>, <span class="learn">learn</span>, and <span class="build">build together</span>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Appending exact content of memories.html's body with adjusted layout -->
+    <div id="memories-section">
+        <div class="section-wrapper">
+            <div class="container">
+                <h1 class="memories-header">Memories</h1>
+                <div class="photo-section">
+                    <img src="first.jpg" alt="First GDG Event" class="photo" style="max-width: 300px; width: 40%; height: auto;">
+                    <p class="caption" style="max-width: 60%; word-wrap: break-word;">The first photo was from the very first GDG on Campus NU Manila event I joined. It was online, and I still remember feeling a bit overwhelmed but super amazed by the speaker. It was also the first event I attended as a freshman, so I felt kind of proud of myself for actually joining and participating—even if it was just virtual.</p>
+                </div>
+                <div class="photo-section">
+                    <img src="second.jpg" alt="Second GDG Event" class="photo" style="max-width: 300px; width: 40%; height: auto;">
+                    <p class="caption" style="max-width: 60%; word-wrap: break-word;">The second photo was from my first face-to-face GDGOC NU event. I remember arriving an hour early but still hesitating to enter the room. I almost backed out, but I'm so glad I pushed through. Everyone there—from the officers to the members—was really kind and welcoming. It ended up being one of the best choices I made because I finally got to connect and interact with people in person. It made the whole experience a lot more fun and memorable.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Appending exact content of gallery.html's body with adjusted margins -->
+    <div id="gallery-section">
+        <div class="section-wrapper">
+            <div style="position: relative; width: 80%; max-width: 800px; height: 400px; overflow: hidden; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);">
+                <div id="slider" style="display: flex; width: 300%; height: 100%; transition: transform 0.5s ease-in-out;">
+                    <img src="1.jpg" alt="Landscape 1" style="width: 33.33%; height: 100%; object-fit: cover;">
+                    <img src="2.jpg" alt="Landscape 2" style="width: 33.33%; height: 100%; object-fit: cover;">
+                    <img src="3.jpg" alt="Landscape 3" style="width: 33.33%; height: 100%; object-fit: cover;">
+                </div>
+                <button onclick="prevSlide()" style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); background-color: rgba(0, 0, 0, 0.5); color: white; border: none; padding: 10px; font-size: 18px; cursor: pointer; border-radius: 5px;">◀</button>
+                <button onclick="nextSlide()" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); background-color: rgba(0, 0, 0, 0.5); color: white; border: none; padding: 10px; font-size: 18px; cursor: pointer; border-radius: 5px;">▶</button>
+            </div>
+        </div>
+    </div>
+    <!-- Appending exact content of favorites.html's body with adjusted margins -->
+    <div id="favorites-section">
+        <div class="section-wrapper">
+            <div class="container">
+                <h1 class="favorites-header">Favorite Speaker & Activity</h1>
+                <div class="photo-container">
+                    <div class="photo-section">
+                        <img src="fave1.jpg" alt="Favorite Speaker" class="photo">
+                        <div class="badge">Build<br>with AI</div>
+                    </div>
+                    <div class="photo-section">
+                        <img src="fave2.jpg" alt="Favorite Activity" class="photo">
+                        <div class="badge">Build<br>with AI</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Appending exact content of message.html's body with adjusted margins -->
+    <div id="message-section">
+        <div class="section-wrapper">
+            <div class="letter-container">
+                <h1 class="letter-header">To GDG on Campus - NU Manila</h1>
+                <div class="letter-content">
+                    <p>As someone who’s always been a bit shy and quiet, joining tech events used to feel intimidating. But GDGoC-NU made that first step a little less scary and a lot more exciting. Whether online or in person, every event I’ve attended felt like a <span class="highlight">safe space</span> where I could learn, be curious, and slowly grow out of my shell.</p>
+                    <p>I’m genuinely <span class="highlight">grateful</span> for the way this community brings students together—not just to talk about tech, but to support each other and build real connections. It’s comforting to know that there are spaces like this where someone like me, who may not always be the loudest in the room, can still belong, learn, and feel inspired.</p>
+                    <p>Thank you for creating opportunities that spark curiosity and confidence in students like me.</p>
+                    <p class="signature">With a <span class="highlight">grateful heart</span>,<br><span class="signature-text" onclick="this.classList.toggle('hovered')">Jasmin</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        /* Define consistent margins for all sections */
+        .section-wrapper {
+            width: 80%;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px 0;
+        }
+        /* Override font sizes to match home-section without disrupting layout */
+        #about-section h1,
+        #memories-section h1,
+        #favorites-section h1,
+        #message-section h1 {
+            font-size: 2em !important;
+        }
+        #about-section p,
+        #about-section ul,
+        #memories-section p,
+        #favorites-section p,
+        #message-section p,
+        #message-section .signature {
+            font-size: 0.9em !important;
+        }
+        /* Ensure signature-text inherits the correct size */
+        #message-section .signature-text {
+            font-size: 1.3em !important; /* Retain original relative size, scaled from 0.9em */
+        }
+        /* Ensure about-section layout matches original about.css */
+        #about-section .logo {
+            height: 5em !important;
+            margin-right: 5px !important;
+        }
+        /* Adjust memories-section layout */
+        #memories-section .photo {
+            max-width: 300px !important;
+            width: 40% !important;
+            height: auto !important;
+        }
+        #memories-section .caption {
+            max-width: 60% !important;
+            word-wrap: break-word !important;
+            overflow-wrap: break-word !important;
+        }
+    </style>
     <script>
         function scrollToSection(sectionId) {
             document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
         }
+
+        let currentSlide = 0;
+        const totalSlides = 3;
+        const slider = document.getElementById('slider');
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            slider.style.transform = `translateX(-${currentSlide * 33.33}%)`;
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            slider.style.transform = `translateX(-${currentSlide * 33.33}%)`;
+        }
+
+        setInterval(nextSlide, 5000);
     </script>
 </body>
 </html>

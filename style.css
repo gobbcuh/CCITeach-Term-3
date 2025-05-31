@@ -93,7 +93,6 @@ h1 span:nth-child(9) { color: #c64848; }
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
 }
 
-/* Original home.css content */
 body {
   margin: 0;
   min-height: 200vh;
