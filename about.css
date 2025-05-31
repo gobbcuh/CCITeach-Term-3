@@ -16,9 +16,9 @@ body {
 }
 
 h1 {
-    font-size: 2.5em;
+    font-size: 2em;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: -10px; /* Reduced from 20px to bring content box closer */
     display: flex;
     align-items: center;
     line-height: 1.1;
@@ -26,31 +26,41 @@ h1 {
 
 h1 .logo {
     height: 5em; /* Matches the combined height of two 2.5em lines with line spacing */
-    margin-right: 15px;
+    margin-right: 5px; /* Reduced from 15px to bring heading closer to logo */
 }
 
 h1 span {
     display: inline-block;
 }
 
-h1 .g1 {
-    color: #4285F4;
+h1 .intro {
+    color: #000000;
+    font-weight: bold;
 }
 
-h1 .d {
-    color: #EA4335;
+h1 .gdg {
+    color: #c64848;
+    font-weight: bold;
 }
 
-h1 .g2 {
-    color: #34A853;
+h1 .on {
+    color: #008744;
+    font-weight: bold;
+}
+
+h1 .campus {
+    color: #f2c201;
+    font-weight: bold;
 }
 
 h1 .university {
-    color: #2962FF;
+    color: #285986;
+    font-weight: bold;
 }
 
 .content-box {
     border: 2px solid #FF0000;
+    border-radius: 20px;
     padding: 20px;
     font-size: 1em;
     line-height: 1.5;
@@ -60,9 +70,24 @@ h1 .university {
     margin: 10px 0;
 }
 
-.content-box .highlight {
-    color: #FFA701;
-    font-weight: 500;
+.content-box .gdg-university {
+    color: #285986;
+    font-weight: bold;
+}
+
+.content-box .connect {
+    color: #c64848;
+    font-weight: bold;
+}
+
+.content-box .learn {
+    color: #008744;
+    font-weight: bold;
+}
+
+.content-box .build {
+    color: #ffa701;
+    font-weight: bold;
 }
 
 .content-box ul {
