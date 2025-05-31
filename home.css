@@ -18,18 +18,20 @@ body {
 }
 
 .text-section {
-  flex: 1;
-  padding-right: 20px;
+  flex: 0.8; /* Slightly reduce the text section's flex to create more space */
+  padding-right: 50px; /* Increase padding to ensure enough space between text and image */
 }
 
 .text-section h1 {
-  font-size: 2.5em;
+  font-size: 2em; /* Reduced from 2.5em to scale down text size */
   margin: 0 0 10px 0;
   font-family: 'Poppins', sans-serif;
+  line-height: 0.9; /* Reduce line spacing between "hello, i am" and "Jasmin Lorino" */
 }
 
 .text-section h1 .hello {
   color: #706464;
+  line-height: 1.3;
 }
 
 .text-section h1 .j { color: #5381ab; }
@@ -44,27 +46,54 @@ body {
 .text-section h1 .i2 { color: #5381ab; }
 .text-section h1 .n2 { color: #78ab51; }
 .text-section h1 .o2 { color: #db6d6d; }
+.text-section h1 { margin-bottom: 30px;}
 
 .text-section p {
-  font-size: 1em;
+  font-size: 0.9em; /* Reduced from 1em to scale down text size */
   margin: 5px 0;
   line-height: 1.5;
 }
 
-.text-section p .highlight {
-  color: #ea4335;
+.text-section p:nth-child(3) {
+  margin-bottom: 20px; /* Add space after "I study computer science with specialization in digital forensics." */
+}
+
+.text-section p .freshman {
+  color: #008744;
+  font-weight: bold;
+}
+
+.text-section p .university {
+  color: #296399;
+  font-weight: bold;
+}
+
+.text-section p .computer-science {
+  color: #c64848;
+  font-weight: bold;
+}
+
+.text-section p .digital-forensics {
+  color: #296399;
+  font-weight: bold;
+}
+
+.text-section p .fun-fact {
+  color: #ffa701;
+  font-weight: bold;
 }
 
 .image-section {
-  flex: 1;
+  flex: 1.2;
   position: relative;
 }
 
 .image-section img {
-  width: 60%;
+  width: 70%;
   height: auto;
   border: 10px solid transparent;
   position: relative;
+  margin-left: 100px;
 }
 
 .image-section img::before {
