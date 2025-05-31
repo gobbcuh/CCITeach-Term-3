@@ -5,18 +5,19 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #fff;
-  font-family: poppins, sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: -120px;
 }
 
 h1 {
   font-size: 4em;
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin-bottom: 20px;
 }
 
@@ -53,7 +54,7 @@ h1 span:nth-child(9) { color: #c64848; }
 }
 
 .search-bar::before {
-  content: "🔍";
+  content: "🔍︎";
   position: absolute;
   left: 15px;
   font-size: 1.2em;
