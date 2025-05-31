@@ -18,15 +18,15 @@ body {
 }
 
 .text-section {
-  flex: 0.8; /* Slightly reduce the text section's flex to create more space */
-  padding-right: 50px; /* Increase padding to ensure enough space between text and image */
+  flex: 0.8;
+  padding-right: 50px;
 }
 
 .text-section h1 {
-  font-size: 2em; /* Reduced from 2.5em to scale down text size */
+  font-size: 2em;
   margin: 0 0 10px 0;
   font-family: 'Poppins', sans-serif;
-  line-height: 0.9; /* Reduce line spacing between "hello, i am" and "Jasmin Lorino" */
+  line-height: 0.9;
 }
 
 .text-section h1 .hello {
@@ -49,13 +49,13 @@ body {
 .text-section h1 { margin-bottom: 30px;}
 
 .text-section p {
-  font-size: 0.9em; /* Reduced from 1em to scale down text size */
+  font-size: 0.9em;
   margin: 5px 0;
   line-height: 1.5;
 }
 
 .text-section p:nth-child(3) {
-  margin-bottom: 20px; /* Add space after "I study computer science with specialization in digital forensics." */
+  margin-bottom: 20px;  
 }
 
 .text-section p .freshman {

@@ -18,15 +18,15 @@ body {
 h1 {
     font-size: 2em;
     font-weight: 700;
-    margin-bottom: -10px; /* Reduced from 20px to bring content box closer */
+    margin-bottom: -10px; 
     display: flex;
     align-items: center;
     line-height: 1.1;
 }
 
 h1 .logo {
-    height: 5em; /* Matches the combined height of two 2.5em lines with line spacing */
-    margin-right: 5px; /* Reduced from 15px to bring heading closer to logo */
+    height: 5em;
+    margin-right: 5px;
 }
 
 h1 span {

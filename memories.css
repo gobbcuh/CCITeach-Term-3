@@ -30,20 +30,20 @@ body {
     display: flex;
     align-items: center;
     margin-bottom: 30px;
-    gap: 20px; /* Space between photo and caption */
+    gap: 20px;
 }
 
 .photo {
-    width: 40%; /* Adjusted to fit on the left */
+    width: 40%; 
     max-width: 300px;
     height: auto;
-    border-radius: 15px; /* Rounded corners */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover transition */
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .photo:hover {
-    transform: scale(1.05); /* Slight zoom on hover */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .caption {
@@ -52,5 +52,5 @@ body {
     line-height: 1.5;
     color: #000000;
     margin-left: 20px;
-    flex: 1; /* Takes remaining space on the right */
+    flex: 1;
 }
