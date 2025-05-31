@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    text-align: left;
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    line-height: 1.1;
+}
+
+h1 .logo {
+    height: 5em; /* Matches the combined height of two 2.5em lines with line spacing */
+    margin-right: 15px;
+}
+
+h1 span {
+    display: inline-block;
+}
+
+h1 .g1 {
+    color: #4285F4;
+}
+
+h1 .d {
+    color: #EA4335;
+}
+
+h1 .g2 {
+    color: #34A853;
+}
+
+h1 .university {
+    color: #2962FF;
+}
+
+.content-box {
+    border: 2px solid #FF0000;
+    padding: 20px;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.content-box p {
+    margin: 10px 0;
+}
+
+.content-box .highlight {
+    color: #FFA701;
+    font-weight: 500;
+}
+
+.content-box ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.content-box li {
+    margin: 5px 0;
+}
